@@ -62,7 +62,10 @@
         <button class="buttonfooter">Aanmelden</button>
     </div>
     <div class="buttonlist">
-        <button class="buttonicon">icon</button>
+        <button class="buttonicon"><i class="fab fa-facebook-f fa-lg"></i></button>
+        <button class="buttonicon"><i class="fab fa-twitter fa-lg"></i></button>
+        <button class="buttonicon"><i class="fab fa-instagram fa-lg"></i></button>
+        <button class="buttonicon"><i class="fas fa-envelope fa-lg"></i></button>
     </div>
     <hr>    
     <p class="itemtitle">Kleuren</p>
@@ -129,7 +132,105 @@
     <p>transform: scale(1.1);}</p>
     </div>
 
+    <p class="itemtitle">Foto's fotopagina</p>    
+<div class="container">
 
+        
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="images/slide1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="images/slide2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="images/slide3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="images/slide4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="images/slide5.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="images/slide6.jpg" style="width:100%">
+        </div>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+       
+      
+        
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Relaxing">
+          </div>
+          <div class="column"> 
+            <img class="demo cursor" src="images/slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Relaxing op het water">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="vrienden">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Drankje erbij">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="slipping">
+          </div> 
+          <div class="column">
+            <img class="demo cursor" src="images/slide6.jpg" style="width:100%" onclick="currentSlide(6)" alt="camping">
+          </div>
+        </div>
+      </div>
+      <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+        <div class="code">
+            <p>Container voor de grote foto</p>
+            <p>Rows, columns voor de thumbnails</p>
+            <p>Opacity tijdens hoveren over thumbnails</p>
+            <p>Stukje javascript voor het klikken door de foto's</p>
+        </div>
 </body>    
 </body>
 </html>
