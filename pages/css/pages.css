@@ -16,6 +16,22 @@ body {
     background: linear-gradient(to bottom right, #5d509d, #30b29b);
     background-repeat: repeat-x;
     color: white;
+    line-height: 10px;
+}
+
+.itemtitle {
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 18px;
+
+}
+hr{
+    display: block;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0px;
 }
 
 img {
@@ -52,7 +68,9 @@ img {
     padding: 0 30px;
     background: #0e222d;    
   }
-   
+  
+  
+  }
   
   ul#nav .current a, ul#nav li:hover > a  {
     color: #fff;
@@ -60,7 +78,11 @@ img {
     background: hsla(295, 64%, 56%, 1);
     
   }
-   
+
+ul#nav li a.active{
+        background-color: #4CAF50;
+        color: white;
+    }
   
   ul#nav  ul {
     display: none;
@@ -110,6 +132,7 @@ img {
     font-size: 16px;
     cursor: pointer;
     border-radius: 25px;
+    font-weight: bold;
 
 }
 
@@ -132,7 +155,7 @@ img {
 }
 
 .buttonfooter {
-    font-family: 'Slabo 27px';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #28135A;
     border: none;
     color: white ;
@@ -150,6 +173,7 @@ img {
     text-align: center;
     font-size: 16px;
     display: inline-block;
+    margin-top: 5px;
 }
 #one {
     background-color: hsla(295, 64%, 56%, 1);
@@ -173,5 +197,39 @@ img {
 #seven {
     background-color:#0e222d;
 }
+
+.wit60 {
+    color: #0e222d;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.wit30{
+    background-color: hsla(0, 0%, 100%, 0.3);
+    width: 350px;
+    padding: 10px;
+}
+
+.lineup {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 300px;
+    border: solid 10px hsla(0, 0%, 100%, 0.3);
+  }
+  .lineup img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .lineup:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
 
 /* Voeg jouw css hieraan toe */

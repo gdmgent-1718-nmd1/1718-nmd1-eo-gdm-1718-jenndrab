@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/pages.css">
     <link href='https://fonts.googleapis.com/css?family=Slabo 27px' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Slabo 13px' rel='stylesheet'>
 </head>
 <body>
     <body class="background">
@@ -17,10 +18,10 @@
     <div id="menu">
  
         <ul id="nav">
-        <li><a href="#">Home</a>
+        <li><a class="active" href="#">Home</a>
         </li>
          
-        <li><a href="#">Line-up</a>
+        <li><a class="active" href="#">Line-up</a>
         </li>
         <li><a href="#">Tickets</a>
         </li>
@@ -42,10 +43,10 @@
         </ul>
          
         </div>
-
+    <hr>
     <p class="itemtitle">Knoppen</p>
     <div class="buttonlist">
-        <button class="buttontickets">TICKETS</button>
+        <button class="buttontickets">Boek nu!</button>
     </div>
 
     <div class="buttonlist">
@@ -56,18 +57,70 @@
         <button class="buttonfooter">Aanmelden</button>
     </div>
 
+    <hr>    
     <p class="itemtitle">Kleuren</p>
     <div class="buttonlist">
-        <div class="kleur" id="one"><p>#9e5ba0</p></div>
-        <div class="kleur" id="two"><p>#5d509d</p></div>
-        <div class="kleur" id="three"><p>#30b29b</p></div>
-        <div class="kleur" id="four"><p>#282355</p></div>
-        <div class="kleur" id="five"><p>#ffffff</p></div>
-        <div class="kleur" id="six"><p>#1159a6</p></div>
-        <div class="kleur" id="seven"><p>#0e222d</p></div>
+        <div class="kleur" id="one"><p>#9e5ba0</p>
+        <p>rgb(158, 91, 160)</p>
+        <p>hsl(298, 27%, 49%)</p>
+        </div>
+        <div class="kleur" id="two"><p>#5d509d</p>
+        <p>rgb(93, 80, 157)</p>
+        <p>hsl(250, 32%, 46%)</p>
+        </div>
+        <div class="kleur" id="three"><p>#30b29b</p>
+        <p>rgb(48, 178, 155)</p>
+        <p>hsl(169, 58%, 44%)</p>
+        </div>
+        <div class="kleur" id="four"><p>#282355</p>
+        <p>rgb(40, 35, 85)</p>
+        <p>hsl(246, 42%, 24%)</p>
+        </div>
+        <div class="kleur" id="five"><p>#ffffff</p>
+        <p>rgb(255, 255, 255)</p>
+        <p>hsl(0, 0%, 100%)</p>
+        </div>
+        <div class="kleur" id="six"><p>#1159a6</p>
+        <p>rgb(17, 89, 166)</p>
+        <p>hsl(211, 81%, 36%)</p>
+        </div>
+        <div class="kleur" id="seven"><p>#0e222d</p>
+        <p>rgb(14, 34, 45)</p>
+        <p>hsl(201, 53%, 12%)</p>
+        </div>
     </div>
     
+    <hr>
+    <p class="itemtitle">Fonts</p>
+    <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 25px;">Roboto > Titels van teksten en elementen</p>
 
+    <p style="font-family: 'Slabo 13px'; font-size: 22px;">Slabo 13px > Introtekst</p>
+
+    <p style="font-family: 'Slabo 27px'; font-size: 22px ">Slabo 27px > Lopende tekst</p>
+
+    <p class="itemtitle">Achtergrond teksten</p>
+    <div class="wit60">
+        <p>color: #0e222d;</p>
+        <p>background-color: hsla(0, 0%, 100%, 0.6);</p>
+    </div>
+
+    <div class="wit30">
+    <p>color: #fff</p>
+    <p>background-color: hsla(0, 0%, 100%, 0.3);</p>
+    </div>
+
+    <hr>
+    <p class="itemtitle">Line-up foto's</p>
+    <div class="lineup">
+        <img src="images/andrew-gaines-287085-unsplash.jpg" alt="Ricky Nomero">
+    
+    </div>
+    <div class="wit60">
+    <p>.lineup:hover img {
+            -moz-transform: scale(1.1);</p>
+    <p>-webkit-transform: scale(1.1);</p>
+    <p>transform: scale(1.1);}</p>
+    </div>
 </body>    
 </body>
 </html>
