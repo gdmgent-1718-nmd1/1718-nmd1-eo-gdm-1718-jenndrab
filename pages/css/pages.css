@@ -23,6 +23,9 @@ body {
     text-decoration: underline;
     text-decoration-color: white;
     font-size: 18px;
+    color: white;
+    font-weight: bold;
+    
 
 }
 hr{
@@ -34,6 +37,14 @@ hr{
     border-width: 0px;
 }
 
+.code{
+    background-color: #333;
+    color: white;
+    width: 350px;
+    padding: 5px 10px;;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
 img {
     max-width: 100%; /* Afbeeldingen responsive maken */
 }
@@ -70,7 +81,7 @@ img {
   }
   
   
-  }
+  
   
   ul#nav .current a, ul#nav li:hover > a  {
     color: #fff;
@@ -79,10 +90,7 @@ img {
     
   }
 
-ul#nav li a.active{
-        background-color: #4CAF50;
-        color: white;
-    }
+
   
   ul#nav  ul {
     display: none;
