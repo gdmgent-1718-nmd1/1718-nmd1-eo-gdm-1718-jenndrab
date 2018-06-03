@@ -96,6 +96,7 @@ img {
     background: hsla(295, 64%, 56%, 1);
   }
   
+/*buttons*/
   .buttonlist {
       display: inline-block;
       margin-right: 20px;
@@ -139,6 +140,38 @@ img {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+}
+
+/*kleuren*/
+.kleur {
+    border: none;
+    color: white ;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+}
+#one {
+    background-color: hsla(295, 64%, 56%, 1);
+}
+#two {
+    background-color: #5d509d;
+}
+#three {
+    background-color: #30b29b;
+}
+#four {
+    background-color:#282355;
+}
+#five {
+    background-color:#fff;
+    color: black;
+}
+#six {
+    background-color:#1159a6;
+}
+#seven {
+    background-color:#0e222d;
 }
 
 /* Voeg jouw css hieraan toe */
